@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
     }
 
     //printf("%0.1f°%c\n", temperature, scale);
-    printf("custom.cpu_temperature %0.1f %u\n", temperature, (unsigned)time(NULL));
+    printf("cpu_temperature %0.1f %u\n", temperature, (unsigned)time(NULL));
 
     return 0;
 }
