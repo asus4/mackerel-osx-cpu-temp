@@ -3,7 +3,7 @@ CC     = cc
 CFLAGS = -O2 -Wall
 INC    = -framework IOKit
 PREFIX = /usr/local
-EXEC   = osx-cpu-temp
+EXEC   = mackerel-osx-cpu-temp
 
 build : $(EXEC)
 

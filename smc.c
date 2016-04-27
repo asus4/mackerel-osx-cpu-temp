@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <IOKit/IOKitLib.h>
+ #include <time.h>
 
 #include "smc.h"
 
@@ -190,7 +191,8 @@ int main(int argc, char *argv[])
       temperature = convertToFahrenheit(temperature);
     }
 
-    printf("%0.1f°%c\n", temperature, scale);
+    //printf("%0.1f°%c\n", temperature, scale);
+    printf("custom.cpu_temperature %0.1f %u\n", temperature, (unsigned)time(NULL));
 
     return 0;
 }
